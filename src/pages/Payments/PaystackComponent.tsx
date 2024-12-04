@@ -131,7 +131,7 @@ const PaystackComponent: React.FC = () => {
               onClick={handleProceed}
               style={{
                 backgroundColor: "#FFDB1B",
-                color: "#fff",
+                color: "#043424",
                 border: "none",
                 padding: "10px 15px",
                 cursor: "pointer",
