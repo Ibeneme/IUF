@@ -1,0 +1,44 @@
+/* BlogHero.css */
+.blog-hero {
+  position: relative;
+  background: url('../../Sections/Why_Choose_us/G/bill.jpg') no-repeat center center fixed;
+  /* Fixed typo in the path */
+  background-size: cover;
+  /* Ensures the image covers the area without stretching */
+  background-attachment: fixed;
+  /* Enables the parallax effect */
+  background-position: center center;
+  /* Centers the background image */
+  height: 800px;
+  /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  /* Centers content vertically */
+  justify-content: center;
+  /* Centers content horizontally */
+  overflow: hidden;
+  /* Ensures no overflow issues */
+  width: 100%;
+  /* Ensures it takes up full width */
+}
+
+
+.blog-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.67);
+  /* Semi-transparent overlay */
+}
+
+.blog-hero-title {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  /* Adjust font size as needed */
+  text-align: center;
+  z-index: 1;
+  font-weight: 900;
+}
