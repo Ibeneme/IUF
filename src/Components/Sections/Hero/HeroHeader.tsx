@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Hero.css";
 import Modal from "../../Modal/Modal";
-
+import logo from "../../../../public/vite.png";
 
 const HeroHeader: React.FC = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -44,16 +44,19 @@ const HeroHeader: React.FC = () => {
   const closeModal = () => setIsModalOpen(false);
   return (
     <header className={`hero-header ${showNavbar ? "scrolled" : "scrolled"}`}>
-      <div className="hero-header-title">
+      <div
+        className="hero-header-title"
+        style={{ display: "flex", gap: 8, alignItems: "center" }}
+      >
+        <img src={logo} style={{ height: 48, width: 48 }} />
+
         <h1
           className={`hero-header-title ${
             showNavbar ? "scrolled" : "scrolled"
           }`}
           onClick={() => navigate("/home")}
-          style={{fontWeight: 900, fontSize: '1.5rem'}}
+          style={{ fontWeight: 900, fontSize: "1.5rem" }}
         >
-          {/* <img src={logo} style={{ height: 28, width: 28 }} />  */}
-          
           IUF
         </h1>
       </div>
