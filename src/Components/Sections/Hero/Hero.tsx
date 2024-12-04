@@ -10,6 +10,7 @@ import WhyChooseUsG from "../Why_Choose_us/G/WhyChooseUsG";
 import WhyChooseUsH from "../Why_Choose_us/G/WhyChooseUsH";
 import ImageSlider from "../Why_Choose_us/G/ImageSlider";
 import SupportCause from "../Why_Choose_us/G/SupportCause";
+import PaystackComponent from "../../../pages/Payments/PaystackComponent";
 
 const Hero: React.FC = () => {
 
@@ -55,7 +56,9 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <CenteredTextSection />
+
       <WhyChooseUsF />
+      <PaystackComponent />
       <WhyChooseUsG />
       <WhyChooseUsH />
       <SupportCause />
