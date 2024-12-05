@@ -3,7 +3,6 @@ import Index from "./pages/Index";
 import BlogPage from "./Components/Blog/BlogPage";
 import BlogDetailPage from "./Components/Blog/BlogDetailPage";
 import HeroHeader from "./Components/Sections/Hero/HeroHeader";
-import AboutUs from "./pages/AboutUs/AboutUs";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./Components/Sections/Footer/Footer";
 import Events from "./pages/Events/Events";
@@ -24,6 +23,12 @@ import PrivateRoute from "./PrivateRoute"; // Import PrivateRoute
 import "bootstrap/dist/css/bootstrap.min.css";
 import BlogDetailPageById from "./Components/Blog/BlogByID";
 import UnsubscribePage from "./Components/Blog/UnsubscribePage";
+import BlogHero from "./Components/Blog/BlogHero/BlogHero";
+import Testimonials from "./Components/Sections/Testimonials/Testimonials";
+import PaystackComponent from "./pages/Payments/PaystackComponent";
+import ImageSlider from "./Components/Sections/Why_Choose_us/G/ImageSlider";
+import WhyChooseUsG from "./Components/Sections/Why_Choose_us/G/WhyChooseUsG";
+import WhyChooseUsH from "./Components/Sections/Why_Choose_us/G/WhyChooseUsH";
 
 function App() {
   return (
@@ -122,13 +127,47 @@ function App() {
           }
         />
         <Route
-          path="/about-us"
+          path="/contact-us"
           element={
             <>
               <HeroHeader />
-              <AboutUs />
+              <BlogHero title="Contact Us" />
               <CenteredTextSectionContact />
               <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/our-programs"
+          element={
+            <>
+              <div style={{ backgroundColor: "#043424" }}>
+                <HeroHeader />
+                <BlogHero title="Our Programs" />
+                <WhyChooseUsG />
+                <WhyChooseUsH />
+                <PaystackComponent />
+                <ImageSlider />
+                <CenteredTextSectionContact />
+                <Footer />
+              </div>
+            </>
+          }
+        />
+
+        <Route
+          path="/donate"
+          element={
+            <>
+              <div style={{ backgroundColor: "#043424" }}>
+                <HeroHeader />
+                <BlogHero title="Donate" />
+                <PaystackComponent />
+                <Testimonials />
+                <ImageSlider />
+                <CenteredTextSectionContact />
+                <Footer />
+              </div>
             </>
           }
         />

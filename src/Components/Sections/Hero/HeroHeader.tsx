@@ -63,13 +63,27 @@ const HeroHeader: React.FC = () => {
             className={isActive("/home") ? "active-route" : ""}
           >
             Home
-          </li>
-          {/* <li
-            onClick={() => navigate("/about-us")}
-            className={isActive("/about-us") ? "active-route" : ""}
+          </li>{" "}
+          <li
+            onClick={() => navigate("/contact-us")}
+            className={isActive("/contact-us") ? "active-route" : ""}
           >
-            About Us
+            Contact Us
           </li>
+          <li
+            onClick={() => navigate("/donate")}
+            className={isActive("/donate") ? "active-route" : ""}
+          >
+            Donate
+          </li>
+          <li
+            onClick={() => navigate("/our-programs")}
+            className={isActive("/our-programs") ? "active-route" : ""}
+          >
+            Our Programs
+          </li>
+          
+          {/*
           <li
             onClick={() => navigate("/our-services")}
             className={isActive("/our-services") ? "active-route" : ""}
