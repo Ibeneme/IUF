@@ -13,8 +13,9 @@ const CenteredTextSectionContact: React.FC = () => {
       style={{
         backgroundColor: "#043424",
         marginBottom: -120,
-        paddingBottom: 360,
+        paddingBottom: 240,
         padding: "20px",
+        paddingTop: 240
       }}
     >
       <h3 className="section-header" style={{ color: "#ffdb1b" }}>
@@ -37,45 +38,11 @@ const CenteredTextSectionContact: React.FC = () => {
           icon={<FaEnvelope style={{ color: "#ffdb1b" }} />}
           text={
             <a
-              href="mailto:info@isacculekele.com"
+              href="mailto:info@iufng.org"
               style={{ fontWeight: 900, color: "#ffdb1b" }}
             >
-              info@isacculekele.com
+              info@iufng.org
             </a>
-          }
-        />
-        <ContactDetail
-          icon={<FaEnvelope style={{ color: "#ffdb1b" }} />}
-          text={
-            <>
-              <a
-                href="mailto:isaac@iufng.org"
-                style={{ fontWeight: 900, color: "#ffdb1b" }}
-              >
-                isaac@iufng.org
-              </a>
-              || &nbsp;
-              <a
-                href="mailto:dan@iufng.org"
-                style={{ fontWeight: 900, color: "#ffdb1b" }}
-              >
-                dan@iufng.org
-              </a>
-              || &nbsp;
-              <a
-                href="mailto:julius@iufng.org"
-                style={{ fontWeight: 900, color: "#ffdb1b" }}
-              >
-                julius@iufng.org
-              </a>
-              || &nbsp;
-              <a
-                href="mailto:ejuma@iufng.org"
-                style={{ fontWeight: 900, color: "#ffdb1b" }}
-              >
-                ejuma@iufng.org
-              </a>
-            </>
           }
         />
         <ContactDetail
@@ -91,7 +58,7 @@ const CenteredTextSectionContact: React.FC = () => {
         />
       </div>
 
-      <a href="mailto:isaac@iufng.org">
+      <a href="mailto:info@iufng.org">
         <button
           className="cta-button"
           style={{ backgroundColor: "#ffdb1b", border: `1px solid #ffdb1b` }}
@@ -132,7 +99,8 @@ const ContactDetail: React.FC<{
     >
       {icon}
     </div>
-    <span style={{ wordBreak: "break-word" }}>{text}</span> {/* Break long words if necessary */}
+    <span style={{ wordBreak: "break-word" }}>{text}</span>{" "}
+    {/* Break long words if necessary */}
   </p>
 );
 

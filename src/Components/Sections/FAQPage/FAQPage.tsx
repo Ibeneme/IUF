@@ -18,11 +18,6 @@ const faqs = [
       "The Isoko Secondary Schools Competition is an academic and literary contest aimed at highlighting talent and encouraging excellence among students. It has successfully run for two editions and will continue to inspire academic achievement.",
   },
   {
-    question: "Can I contribute content to the competition pages?",
-    answer:
-      "Yes, you can upload texts, pictures, and links to YouTube videos for both editions of the Isoko Secondary Schools Competition. Privileges to add upcoming programs can also be granted.",
-  },
-  {
     question: "What type of programs does the foundation organize?",
     answer:
       "The foundation organizes competitions, motivational initiatives, and capacity-building activities that aim to empower individuals, particularly youths, and help them achieve their full potential.",
@@ -32,11 +27,11 @@ const faqs = [
     answer:
       "You can support us by making donations, partnering with us, or volunteering. Donations can be made using cards, direct transfers, and other secure payment options.",
   },
-  {
-    question: "Is there a way to view photos and videos from past events?",
-    answer:
-      "Yes, you can visit our Gallery page to view pictures and YouTube video links from past events and programs.",
-  },
+  // {
+  //   question: "Is there a way to view photos and videos from past events?",
+  //   answer:
+  //     "Yes, you can visit our Gallery page to view pictures and YouTube video links from past events and programs.",
+  // },
   {
     question: "How can I contact the Isaac Ukeleghe Foundation?",
     answer:
