@@ -14,8 +14,9 @@ const CenteredTextSectionContact: React.FC = () => {
         backgroundColor: "#043424",
         marginBottom: -120,
         paddingBottom: 240,
-        padding: "20px",
-        paddingTop: 240
+        paddingTop: 240,
+        paddingLeft: 24,
+        paddingRight: 24,
       }}
     >
       <h3 className="section-header" style={{ color: "#ffdb1b" }}>
