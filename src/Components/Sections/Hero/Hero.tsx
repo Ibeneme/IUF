@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import image1 from "../../Sections/Why_Choose_us/G/bill.jpg";
+import image1 from "../../../assets/isoko/e.jpeg"
 import CenteredTextSection from "../CenteredTextSection/CenteredTextSection";
 import HeroHeader from "./HeroHeader";
 import FAQPage from "../FAQPage/FAQPage";
@@ -13,14 +13,12 @@ import SupportCause from "../Why_Choose_us/G/SupportCause";
 import PaystackComponent from "../../../pages/Payments/PaystackComponent";
 
 const Hero: React.FC = () => {
-
-
   return (
     <div>
       <HeroHeader />
       <div className="hero-container">
         <div
-          className='hero-slide enter'
+          className="hero-slide enter"
           style={{
             backgroundImage: `url(${image1})`,
             width: "100vw",
@@ -29,7 +27,10 @@ const Hero: React.FC = () => {
         >
           <div className="hero-overlay"></div>
           <div className="hero-content">
-            <h2 className="hero-title">Welcome to Isaac Ukeleghe <span style={{color: '#ffdb1b'}}>Foundation</span></h2>
+            <h2 className="hero-title">
+              Welcome to Isaac Ukeleghe{" "}
+              <span style={{ color: "#ffdb1b" }}>Foundation</span>
+            </h2>
             <br />
             <p className="hero-title-p">
               The Isaac Ukeleghe Foundation is committed to empowering youth,
@@ -39,19 +40,6 @@ const Hero: React.FC = () => {
               dedicated to creating opportunities for everyone to grow and
               succeed.
             </p>
-            {/* <p className="hero-title-p">
-              Join us in making a difference across Africa.{" "}
-              <span
-                style={{
-                  backgroundColor: "#C4D92E",
-                  color: "#000",
-                  padding: `0px 5px`,
-                  fontWeight: 900,
-                }}
-              >
-                Africa
-              </span>
-            </p> */}
           </div>
         </div>
       </div>

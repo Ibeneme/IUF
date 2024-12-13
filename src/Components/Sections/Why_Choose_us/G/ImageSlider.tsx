@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import image1 from "./ngo-image.jpg"; // Update paths to your images
 import image2 from "./ann.jpg";
-import image3 from "./ann.jpg";
-import image4 from "./ann.jpg";
+import image5 from "../../../../assets/isoko/a.jpeg";
+import image6 from "../../../../assets/impact/aa.jpeg";
+import image7 from "../../../../assets/impact/ab.jpeg";
+import image8 from "../../../../assets/impact/ac.jpeg";
+
 
 const ImageSlider: React.FC = () => {
-  const images = [image1, image2, image3, image4];
+  const images = [image1, image2,image5, image6, image7, image8];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
